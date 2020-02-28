@@ -16,7 +16,7 @@ CREATE TABLE messages (
   id INT AUTO_INCREMENT,
   content VARCHAR(255),
   room VARCHAR(100),
-  fromUser INT,
+  fromUser INT(10),
   FOREIGN KEY (fromUser) REFERENCES users(id),
   PRIMARY KEY(id)
 );

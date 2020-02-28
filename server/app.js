@@ -11,12 +11,14 @@ var router = require('./routes.js');
 var app = express();
 module.exports.app = app;
 
+
 // Set what we are listening on.
 app.set('port', 3000);
 
 // Logging and parsing
 app.use(morgan('dev'));
 app.use(parser.json());
+
 
 // Set up our routes
 app.use('/classes', router);
